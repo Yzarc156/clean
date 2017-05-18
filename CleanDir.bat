@@ -1,0 +1,12 @@
+attrib -R -S -H "%windir%\SoftwareDistribution\Download\*.*"
+del "%windir%\SoftwareDistribution\Download\*.*" /S /Q /F
+attrib -R -S -H "%systemdrive%\$Recycle.Bin\*.*"
+del "%systemdrive%\$Recycle.Bin\*.*" /S /Q /F
+attrib -R -S -H "%localappdata%\Temp\*.*"
+del "%localappdata%\Temp\*.*" /S /Q /F
+attrib -R -S -H "%windir%\Temp\*.*"
+del "%windir%\Temp\*.*" /S /Q /F
+attrib -R -S -H "%windir%\Logs\*.*"
+del "%windir%\Logs\*.*" /S /Q /F
+attrib -R -S -H "%tmp%\*.*"
+del "%tmp%\*.*" /S /Q /F
